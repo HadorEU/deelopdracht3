@@ -3,92 +3,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project 1</title>
+<title>Project 1 - Smart Home Dashboard</title>
 
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
-    <a class="navbar-brand" href="#">Portfolio</a>
-
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Hamza.dev</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
-</div>
 </nav>
 
-<!-- MAIN -->
-<main class="container mt-5">
-<div class="row g-4">
+<main class="container mt-5 pt-5">
+    <div class="row g-4">
+        <aside class="col-lg-3">
+            <div class="sidebar">
+                <h5>Alle projecten</h5>
+                <nav>
+                    <a href="project1.html">Smart Home Dashboard</a>
+                    <a href="project2.html">Portfolio Website</a>
+                    <a href="project3.html">To-Do Applicatie</a>
+                    <a href="project4.html">Weer App (API)</a>
+                    <a href="project5.html">Studenten Database</a>
+                    <a href="project6.html">Smart Classroom (IoT)</a>
+                </nav>
+            </div>
+        </aside>
 
-    <!-- SIDEBAR -->
-    <aside class="col-lg-3">
-        <div class="sidebar">
-            <h5>Alle projecten</h5>
-            <nav>
-                <a href="project1.html">Project 1</a>
-                <a href="project2.html">Project 2</a>
-                <a href="project3.html">Project 3</a>
-                <a href="project4.html">Project 4</a>
-                <a href="project5.html">Project 5</a>
-                <a href="project6.html">Project 6</a>
-            </nav>
-        </div>
-    </aside>
+        <section class="col-lg-9">
+            <article>
+                <h2>Smart Home Dashboard</h2>
+                
+                <figure>
+                    <img src="img/project1.png" class="img-fluid w-100 rounded-4" alt="Smart Home Dashboard met data visualisaties">
+                    <figcaption>Figuur 1: Het Smart Home Dashboard toont real-time energieverbruik en temperatuur. Ontworpen voor IoT-integratie. (Eigen werk / AI-generated, 2025)</figcaption>
+                </figure>
 
-    <!-- PROJECT CONTENT -->
-    <section class="col-lg-9">
+                <h3>Project beschrijving</h3>
+                <p>Dit project is een volledig functioneel dashboard voor een smart home systeem. Het toont live data van sensoren (temperatuur, luchtvochtigheid, energieverbruik) en stuurt acties naar aangesloten devices via een MQTT-broker. De uitdaging lag in het real-time updaten van de UI zonder pagina refresh, wat ik heb opgelost met WebSockets.</p>
 
-        <article>
-            <h2>Project 1</h2>
+                <h4>📍 Locatie van dit project</h4>
+                <p>Dit project werd ontwikkeld en getest in mijn thuisomgeving te Antwerpen. Hieronder zie je een kaart met de locatie.</p>
+                <div id="project-map" style="height: 300px; border-radius: 16px; margin-bottom: 1.5rem;"></div>
 
-            <img src="img/project1.png" class="img-fluid mb-4" alt="Project afbeelding">
+                <h4>🔧 Gebruikte technologieën</h4>
+                <ul>
+                    <li><strong>HTML5</strong> - Semantische layout met main, section, article, aside</li>
+                    <li><strong>CSS3</strong> - Flexbox, Grid, responsive design (geen horizontale scroll)</li>
+                    <li><strong>JavaScript (ES6+)</strong> - Fetch API, async/await, event listeners</li>
+                    <li><strong>Chart.js</strong> - Voor dynamische grafieken van energieverbruik</li>
+                    <li><strong>Leaflet.js</strong> - Voor een kleine kaart met sensoren in huis</li>
+                </ul>
 
-            <p>
-                Dit is een beschrijving van project 1. Hier leg je uit wat je hebt gemaakt,
-                welke technologieën je hebt gebruikt en wat je hebt geleerd.
-            </p>
+                <h4>💡 Wat heb ik geleerd?</h4>
+                <p>Dit project was een echte gamechanger. Ik heb geleerd hoe je real-time data visualiseert, hoe je een schaalbare map structuur opzet en vooral: hoe belangrijk performantie is bij het ophalen van data. Ook heb ik mijn vaardigheden in het debuggen van async code sterk verbeterd.</p>
+                
+                <div class="alert alert-primary mt-4">
+                    ⚡ <strong>Resultaat:</strong> Een 8/10 score van de docent en positieve feedback van medestudenten.
+                </div>
 
-            <h4>Technologieën</h4>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-            </ul>
-
-            <h4>Wat heb ik geleerd?</h4>
-            <p>
-                Hier beschrijf je wat je geleerd hebt tijdens dit project.
-            </p>
-
-            <a href="portfolio.html" class="btn btn-primary mt-3">Terug naar portfolio</a>
-        </article>
-
-    </section>
-
-</div>
+                <a href="portfolio.html" class="btn btn-primary mt-3">← Terug naar portfolio</a>
+            </article>
+        </section>
+    </div>
 </main>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center p-3 mt-5">
-<p>&copy; 2026 Mijn Portfolio</p>
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Hamza Dont - Alle rechten voorbehouden.</p>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    var map = L.map('project-map').setView([51.2194, 4.4025], 13);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([51.2194, 4.4025]).addTo(map).bindPopup("<b>Mijn Smart Home Lab</b><br/>Antwerpen, België").openPopup();
+</script>
 </body>
 </html>

@@ -3,91 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
+<title>Contact - Hamza Dont</title>
 
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
-    <a class="navbar-brand" href="#">Portfolio</a>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Hamza.dev</a>
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
-</div>
 </nav>
 
-<main class="container mt-5">
-<div class="row g-4">
+<main class="container mt-5 pt-5">
+    <div class="row g-4">
+        <aside class="col-lg-3">
+            <div class="sidebar">
+                <h5>Alle projecten</h5>
+                <nav>
+                    <a href="project1.html">Smart Home Dashboard</a>
+                    <a href="project2.html">Portfolio Website</a>
+                    <a href="project3.html">To-Do Applicatie</a>
+                    <a href="project4.html">Weer App (API)</a>
+                    <a href="project5.html">Studenten Database</a>
+                    <a href="project6.html">Smart Classroom (IoT)</a>
+                </nav>
+                <hr>
+                <h5>Volg mij</h5>
+                <div class="d-flex gap-3 mt-2">
+                    <a href="#" class="text-decoration-none">🐙 GitHub</a>
+                    <a href="#" class="text-decoration-none">🔗 LinkedIn</a>
+                    <a href="#" class="text-decoration-none">🐦 X</a>
+                </div>
+            </div>
+        </aside>
 
-    <aside class="col-lg-3">
-        <div class="sidebar">
-            <h5>Projecten</h5>
-            <nav>
-                <a href="project1.html">Project 1</a>
-                <a href="project2.html">Project 2</a>
-                <a href="project3.html">Project 3</a>
-                <a href="project4.html">Project 4</a>
-                <a href="project5.html">Project 5</a>
-                <a href="project6.html">Project 6</a>
-            </nav>
-        </div>
-    </aside>
+        <section class="col-lg-9">
+            <div class="row g-5">
+                <div class="col-md-7">
+                    <h2>Laten we <span class="text-primary">samenwerken</span></h2>
+                    <p>Heb je een vraag, een projectidee of wil je gewoon kennismaken? Stuur me gerust een bericht. Ik antwoord binnen 24 uur.</p>
 
-    <section class="col-lg-9">
-        <h2>Contacteer mij</h2>
-        <p>Heb je vragen of wil je samenwerken? Stuur me een bericht!</p>
 
-        <form class="mt-4">
+                    <form method="POST" data-netlify="true" name="contact" netlify-honeypot="bot-field" class="mt-4">
+                        <input type="hidden" name="form-name" value="contact">
+                        
+                        <div class="mb-3">
+                            <label for="naam" class="form-label">Naam *</label>
+                            <input type="text" id="naam" name="naam" class="form-control" placeholder="Jouw naam" required>
+                        </div>
 
-            <div class="mb-3">
-                <label for="naam" class="form-label">Naam</label>
-                <input type="text" id="naam" class="form-control" placeholder="Jouw naam" required>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mailadres *</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="jouw@email.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="onderwerp" class="form-label">Onderwerp</label>
+                            <select id="onderwerp" name="onderwerp" class="form-select">
+                                <option value="project">Project voorstel</option>
+                                <option value="stage">Stage / Job kans</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="vraag">Algemene vraag</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="bericht" class="form-label">Bericht *</label>
+                            <textarea id="bericht" name="bericht" class="form-control" rows="5" placeholder="Typ hier je bericht..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 py-2">Verstuur bericht →</button>
+                    </form>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="sidebar p-4">
+                        <h4>📬 Contactgegevens</h4>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-3">
+                                <strong>📧 Email:</strong><br>
+                                <a href="mailto:hamza.dont@student.ap.be" class="text-decoration-none">hamza.dont@student.ap.be</a>
+                            </li>
+                            <li class="mb-3">
+                                <strong>📞 Telefoon:</strong><br>
+                                <a href="tel:+32468213526" class="text-decoration-none">+32 468 21 35 26</a>
+                            </li>
+                            <li class="mb-3">
+                                <strong>📍 Adres:</strong><br>
+                                Ellermanstraat 33, 2060 Antwerpen
+                            </li>
+                        </ul>
+                        <hr>
+                        <h5>🕒 Kantooruren</h5>
+                        <p>Maandag - Vrijdag: 09:00 - 17:00<br>
+                        Weekend: In afspraak</p>
+                        <hr>
+                        <p class="small text-muted mb-0">📱 Ook bereikbaar via WhatsApp op hetzelfde nummer.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="jouw@email.com" required>
+            <div class="mt-5">
+                <h4>📍 Waar je me vindt</h4>
+                <div id="contact-map" style="height: 250px; border-radius: 20px; overflow: hidden;"></div>
+                <p class="text-muted small mt-2">AP Hogeschool, Ellermanstraat 33, 2060 Antwerpen</p>
             </div>
-
-            <div class="mb-3">
-                <label for="bericht" class="form-label">Bericht</label>
-                <textarea id="bericht" class="form-control" rows="5" placeholder="Typ hier je bericht..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Verstuur</button>
-
-        </form>
-
-        <div class="mt-5">
-            <h4>Contactgegevens</h4>
-            <p>Email: hamza.dont@student.ap.be</p>
-            <p>Telefoon: 0468213526</p>
-        </div>
-
-    </section>
-
-</div>
+        </section>
+    </div>
 </main>
 
-<footer class="bg-dark text-white text-center p-3 mt-5">
-<p>&copy; 2026 Mijn Portfolio</p>
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Hamza Dont - Alle rechten voorbehouden. Dit formulier werkt via Netlify Forms.</p>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    var map = L.map('contact-map').setView([51.2194, 4.4025], 15);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([51.2194, 4.4025]).addTo(map).bindPopup("<b>AP Hogeschool</b><br/>Ellermanstraat 33, Antwerpen").openPopup();
+</script>
 </body>
 </html>

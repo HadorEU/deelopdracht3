@@ -3,81 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project 2</title>
+<title>Project 4 - Weer App (API)</title>
 
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
-    <a class="navbar-brand" href="#">Portfolio</a>
-
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Hamza.dev</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
-</div>
 </nav>
 
-<main class="container mt-5">
-<div class="row g-4">
+<main class="container mt-5 pt-5">
+    <div class="row g-4">
+        <aside class="col-lg-3">
+            <div class="sidebar">
+                <h5>Alle projecten</h5>
+                <nav>
+                    <a href="project1.html">Smart Home Dashboard</a>
+                    <a href="project2.html">Portfolio Website</a>
+                    <a href="project3.html">To-Do Applicatie</a>
+                    <a href="project4.html">Weer App (API)</a>
+                    <a href="project5.html">Studenten Database</a>
+                    <a href="project6.html">Smart Classroom (IoT)</a>
+                </nav>
+            </div>
+        </aside>
 
-<aside class="col-lg-3">
-<div class="sidebar">
-<h5>Alle projecten</h5>
-<nav>
-<a href="project1.html">Project 1</a>
-<a href="project2.html">Project 2</a>
-<a href="project3.html">Project 3</a>
-<a href="project4.html">Project 4</a>
-<a href="project5.html">Project 5</a>
-<a href="project6.html">Project 6</a>
-</nav>
-</div>
-</aside>
+        <section class="col-lg-9">
+            <article>
+                <h2>Weer App (API)</h2>
+                
+                <figure>
+                    <img src="img/project4.png" class="img-fluid w-100 rounded-4" alt="Weer app met API data">
+                    <figcaption>Figuur 1: Weerapplicatie die live data ophaalt van een externe API. (Eigen werk, 2025)</figcaption>
+                </figure>
 
-<section class="col-lg-9">
-<article>
-<h2>Weer App (API)</h2>
+                <h3>Project beschrijving</h3>
+                <p>Deze applicatie haalt weergegevens op via een externe API (OpenWeatherMap) en toont deze aan de gebruiker. Gebruikers kunnen een stad ingeven en krijgen direct de temperatuur, luchtvochtigheid, windkracht en een beschrijving van het weer te zien. De data wordt live opgehaald en weergegeven.</p>
 
-<img src="img/project4.png" class="img-fluid mb-4">
+                <h4>🔧 Gebruikte technologieën</h4>
+                <ul>
+                    <li><strong>JavaScript (ES6+)</strong> - Fetch API, async/await, JSON</li>
+                    <li><strong>OpenWeatherMap API</strong> - Externe weerservice</li>
+                    <li><strong>HTML5</strong> - Formulieren en dynamische content</li>
+                    <li><strong>CSS3</strong> - Responsieve cards en animaties</li>
+                </ul>
 
-<p>
-Deze applicatie haalt weergegevens op via een externe API en toont deze aan de gebruiker.
-</p>
+                <h4>💡 Wat heb ik geleerd?</h4>
+                <p>Ik heb geleerd hoe ik data van een API kan ophalen en verwerken met fetch en async/await. Ook begrijp ik nu hoe ik met API keys werk, fouten afhandel en data dynamisch in de DOM injecteer. Dit was een belangrijke stap naar het werken met externe services.</p>
+                
+                <div class="alert alert-warning mt-4">
+                    🌤️ <strong>Resultaat:</strong> Een functionele weerapp die real-time data toont voor elke stad ter wereld.
+                </div>
 
-<h4>Technologieën</h4>
-<ul>
-<li>JavaScript</li>
-<li>API</li>
-<li>JSON</li>
-</ul>
-
-<h4>Wat heb ik geleerd?</h4>
-<p>
-Ik heb geleerd hoe ik data van een API kan ophalen en verwerken.
-</p>
-
-<a href="portfolio.html" class="btn btn-primary mt-3">Terug naar portfolio</a>
-</article>
-</section>
-
-</div>
+                <a href="portfolio.html" class="btn btn-primary mt-3">← Terug naar portfolio</a>
+            </article>
+        </section>
+    </div>
 </main>
 
-<footer class="bg-dark text-white text-center p-3 mt-5">
-<p>&copy; 2026 Mijn Portfolio</p>
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Hamza Dont - Alle rechten voorbehouden.</p>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

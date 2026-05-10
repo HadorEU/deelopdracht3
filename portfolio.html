@@ -3,82 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
+<title>Mijn Projecten - Portfolio Hamza</title>
 
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
-    <a class="navbar-brand" href="index.html">Portfolio</a>
-
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Hamza.dev</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
-</div>
 </nav>
 
-<main class="container mt-5">
-<div class="row g-4">
+<main class="container mt-5 pt-5">
+    <div class="row g-4">
+        <aside class="col-lg-3">
+            <div class="sidebar">
+                <h5>Alle projecten</h5>
+                <nav>
+                    <a href="project1.html">Smart Home Dashboard</a>
+                    <a href="project2.html">Portfolio Website</a>
+                    <a href="project3.html">To-Do Applicatie</a>
+                    <a href="project4.html">Weer App (API)</a>
+                    <a href="project5.html">Studenten Database</a>
+                    <a href="project6.html">Smart Classroom (IoT)</a>
+                </nav>
+                <hr>
+                <h5>Technologieën</h5>
+                <p>HTML5, CSS3, JavaScript, Bootstrap, Leaflet, API, SQL, IoT, Arduino</p>
+            </div>
+        </aside>
 
-<aside class="col-lg-3">
-    <div class="sidebar">
-        <h5>Alle projecten</h5>
-        <nav>
-            <a href="project1.html">Project 1</a>
-            <a href="project2.html">Project 2</a>
-            <a href="project3.html">Project 3</a>
-            <a href="project4.html">Project 4</a>
-            <a href="project5.html">Project 5</a>
-            <a href="project6.html">Project 6</a>
-        </nav>
+        <section class="col-lg-9">
+            <h2>Mijn volledige portfolio</h2>
+            <p>Hieronder vind je alle 6 projecten die ik heb gerealiseerd tijdens mijn opleiding. Elk project bevat unieke technieken, design patterns en toont mijn groei als developer.</p>
+            
+            <div class="row g-4 mt-2">
+                <article class="col-md-6 col-xl-4">
+                    <div class="card h-100">
+                        <img src="img/project1.png" class="card-img-top" alt="Smart Home Dashboard">
+                        <div class="card-body">
+                            <h5>Smart Home Dashboard</h5>
+                            <p class="text-muted">IoT | Chart.js | MQTT | Leaflet</p>
+                            <p>Real-time dashboard voor het monitoren van energieverbruik en temperatuur in een smart home omgeving.</p>
+                            <a href="project1.html" class="btn btn-primary btn-sm">Bekijk project →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-6 col-xl-4">
+                    <div class="card h-100">
+                        <img src="img/project2.png" class="card-img-top" alt="Portfolio Website">
+                        <div class="card-body">
+                            <h5>Portfolio Website</h5>
+                            <p class="text-muted">HTML5 | CSS3 | Bootstrap | Netlify</p>
+                            <p>Responsieve portfolio website met moderne UI, Leaflet kaart en werkend contactformulier via Netlify.</p>
+                            <a href="project2.html" class="btn btn-primary btn-sm">Bekijk project →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-6 col-xl-4">
+                    <div class="card h-100">
+                        <img src="img/project3.png" class="card-img-top" alt="To-Do Applicatie">
+                        <div class="card-body">
+                            <h5>To-Do Applicatie</h5>
+                            <p class="text-muted">JavaScript | DOM | LocalStorage</p>
+                            <p>Interactieve takenlijst waarbij gebruikers taken kunnen toevoegen, verwijderen en afvinken met localStorage.</p>
+                            <a href="project3.html" class="btn btn-primary btn-sm">Bekijk project →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-6 col-xl-4">
+                    <div class="card h-100">
+                        <img src="img/project4.png" class="card-img-top" alt="Weer App API">
+                        <div class="card-body">
+                            <h5>Weer App (API)</h5>
+                            <p class="text-muted">Fetch API | Async/Await | JSON</p>
+                            <p>Live weergegevens ophalen via OpenWeatherMap API en dynamisch weergeven in een gebruiksvriendelijke interface.</p>
+                            <a href="project4.html" class="btn btn-primary btn-sm">Bekijk project →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-6 col-xl-4">
+                    <div class="card h-100">
+                        <img src="img/project5.png" class="card-img-top" alt="Studenten Database">
+                        <div class="card-body">
+                            <h5>Studenten Database</h5>
+                            <p class="text-muted">SQL | MySQL | PHP | CRUD</p>
+                            <p>Database systeem voor het beheren van studentengegevens met volledige CRUD-operaties en webinterface.</p>
+                            <a href="project5.html" class="btn btn-primary btn-sm">Bekijk project →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-6 col-xl-4">
+                    <div class="card h-100">
+                        <img src="img/project6.png" class="card-img-top" alt="Smart Classroom IoT">
+                        <div class="card-body">
+                            <h5>Smart Classroom (IoT)</h5>
+                            <p class="text-muted">Arduino | C++ | WebSockets | Chart.js</p>
+                            <p>IoT-systeem dat temperatuur en luchtkwaliteit meet in een klaslokaal en live toont op een dashboard.</p>
+                            <a href="project6.html" class="btn btn-primary btn-sm">Bekijk project →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <section class="mt-5 p-4 bg-light rounded-4">
+                <h4>📊 Overzicht van geleerde vaardigheden</h4>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <ul>
+                            <li>✅ HTML5 semantiek</li>
+                            <li>✅ CSS3 Flexbox & Grid</li>
+                            <li>✅ Responsive design</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>✅ JavaScript ES6+</li>
+                            <li>✅ Fetch API & Async/Await</li>
+                            <li>✅ DOM manipulatie</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>✅ Leaflet.js kaarten</li>
+                            <li>✅ Bootstrap 5</li>
+                            <li>✅ SQL & Databases</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
     </div>
-</aside>
-
-<section class="col-lg-9">
-<div class="row g-4">
-
-<article class="col-md-6">
-    <div class="card">
-        <img src="img/project1.png" class="card-img-top" alt="">
-        <div class="card-body">
-            <h5>Project 1</h5>
-            <a href="project1.html" class="btn btn-primary">Bekijk</a>
-        </div>
-    </div>
-</article>
-
-<article class="col-md-6">
-    <div class="card">
-        <img src="img/project2.png" class="card-img-top" alt="">
-        <div class="card-body">
-            <h5>Project 2</h5>
-            <a href="project2.html" class="btn btn-primary">Bekijk</a>
-        </div>
-    </div>
-</article>
-
-</div>
-</section>
-
-</div>
 </main>
 
-<footer class="bg-dark text-white text-center p-3 mt-5">
-<p>&copy; 2026 Mijn Portfolio</p>
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Hamza Dont - Alle rechten voorbehouden. Alle afbeeldingen zijn eigen werk of AI-gegenereerd.</p>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
